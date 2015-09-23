@@ -95,7 +95,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+table {
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin: 5px;
+  float: left;
+}
 
+tr > td {
+  height: 75px;
+  width: 75px;
+}
 
 
 
