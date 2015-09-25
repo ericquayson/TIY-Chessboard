@@ -1,0 +1,22 @@
+{
+  "name": "TIY-Chessboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "Mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericquayson/TIY-Chessboard.git"
+  },
+  "author": "eric quayson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericquayson/TIY-Chessboard/issues"
+  },
+  "homepage": "https://github.com/ericquayson/TIY-Chessboard"
+}
