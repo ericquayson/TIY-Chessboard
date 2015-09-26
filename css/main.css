@@ -98,8 +98,17 @@ textarea {
 table {
   box-sizing: border-box;
   padding-top: 20px;
-  margin: 5px;
-  float: left;
+  margin: 15px;
+  align: center;
+  background-color: lightblue;
+  float: none;
+}
+
+body {
+  background-color: lightgrey;
+  align: center;
+  box-sizing: border-box;
+  font-size: 30pt;
 }
 
 tr > td {
@@ -107,6 +116,16 @@ tr > td {
   width: 75px;
 }
 
+button {
+  height: 75px;
+  padding-right: 2px;
+  display:inline-block;
+}
+
+caption {
+  font-size: 30pt;
+  color: #444;
+}
 
 
 

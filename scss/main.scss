@@ -102,9 +102,11 @@ table {
   float: left;
 }
 
-
-
-
+tr > button {
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+}
 
 
 
