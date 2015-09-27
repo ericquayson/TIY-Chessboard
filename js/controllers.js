@@ -15,7 +15,7 @@
   $("caption").on('click', 'button' function () {
 
 
-    
+
   });
   // Where CALLBACK is...
   function CALLBACK (EVENT){
@@ -27,9 +27,10 @@
 
   // Controller for "next move"...
   // /* your "next move" button */
-  $(".fafa-play" ).on('click', function(e){
+  $('i.fafa-play').on('click', function(e) {
     // TODO: Fire tracer bullet!
-    alert("hello")
+    var playBttn = $('i.fafa-play');
+      console.log(playBttn);
     // TODO: Tell the Model -- `game` -- to advance to the next move...
     $()
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
@@ -37,24 +38,31 @@
 
   // Controller for "previous move"...
   // /* your "previous move" button */
-  $(".fafa-step-backward").on('click', 'button', function(e){
+  $('i.fa.fa-step-backward').on('click', 'button', function(e){
     // TODO: Fire tracer bullet!
+    var backwardBttn = $('i.fa.fa-step-backward');
+        console.log(backwardBttn);
     // TODO: Tell the Model -- `game` -- to advance to the previous move...
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
   // Controller for "fast-forward"...
   // /* your "fast-forward" button */
-  $("fa fa-fast-forward").on('click', 'button', function(e){
+  $("i.fa-fast-forward").on('click', 'button', function(e){
     // TODO: Fire tracer bullet!
+    var fastforwardBttn = $('i.fa-fast-forward');
+        console.log(fastforwardBttn);
     // TODO: Tell the Model -- `game` -- to advance to the last move...
+
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
   // Controller for anything else...
   // /* any other buttons out there? */
-  $(".fafa-fast-backward").on('click', 'button' function(e){
+  $("i.fafa-fast-backward").on('click', 'button' function(e){
     // TODO: Fire tracer bullet!
+    var fastbackwardBttn = $('i.fafa-fast-backward');
+        console.log(fastbackwardBttn);
     // TODO: Tell the Model -- `game` -- to do something it knows how to do...
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
