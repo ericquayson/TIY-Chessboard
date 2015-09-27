@@ -169,6 +169,9 @@ a {
   background-color: white;
 }
 
+thead {
+  vertical-align: baseline;
+}
 
 
 
