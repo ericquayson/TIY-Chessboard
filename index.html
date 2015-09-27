@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="eng">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,7 +9,8 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel=
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,125 +20,155 @@
         <caption>
           Chessboard!
         </caption>
-        <tr>
-
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
 
 
-        </tr>
 
-        <tr>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
+<!-- refactored code -->
+<tr class="numbers">
+  <th colspan="2"> 1</th>
+</tr>
 
-        </tr>
+<tr>
+  <td      >a</td>
+  <td      >b</td>
+  <td      >c</td>
+  <td      >d</td>
+  <td      >e</td>
+  <td      >f</td>
+  <td      >g</td>
+  <td      >h</td>
+
+</tr>
+<tr> <!-- first row -->
+
+  <td class="light" id="A8"><a href="#" class="rook black">&#9820;</a></td>
+  <td class="dark" id="B8"><a href="#" class="night black">&#9822;</a></td>
+  <td class="light" id="C8"><a href="#" class="bishop black">&#9821;</a></td>
+  <td class="dark" id="D8"><a href="#" class="king black">&#9819;</a></td>
+  <td class="light" id="E8"><a href="#" class="queen black">&#9818;</a></td>
+  <td class="dark" id="F8"><a href="#" class="bishop black">&#9821;</a></td>
+  <td class="light" id="G8"><a href="#" class="night black">&#9822;</a></td>
+  <td class="dark" id="H8"><a href="#" class="rook black">&#9820;</a></td>
 
 
-        <tr>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
-          <td height="75px" width="75px" bgcolor="lightgreen"></td>
-          <td height="75px" width="75px" bgcolor="black"></td>
+</tr>
+<tr> <!-- Second row -->
 
-        </tr>
+  <td class="dark" id="A7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="light" id="B7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="dark" id="C7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="light" id="D7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="dark" "E7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="light" id="F7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="dark" id="G7"><a href="#" class="pawn black">&#9823;</a></td>
+  <td class="light" id="H7"><a href="#" class="pawn black">&#9823;</a></td>
 
-      <tr>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
+
+</tr>
+<tr> <!-- Third Row -->
+
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+
+
+</tr>
+<tr> <!-- fourth row -->
+
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+
+
+</tr>
+<tr> <!-- fifth row -->
+
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+
+
+</tr>
+<tr> <!-- Sixth row -->
+
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+  <td class="dark"></td>
+  <td class="light"></td>
+
+
+</tr>
+<tr> <!-- Seventh row -->
+
+  <td class="light" id="A2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="dark" id="B2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="light" id="C2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="dark" id="D2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="light" id="E2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="dark" id="F2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="light" id="G2"><a href="#" class="pawn white">&#9817;</a></td>
+  <td class="dark" id="H2"><a href="#" class="pawn white">&#9817;</a></td>
+
+
+</tr>
+<tr> <!-- Eighth row -->
+
+  <td class="dark"  id="A1"><a href="#" class="rook white">&#9814;</a></td>
+  <td class="light" id="B1"><a href="#" class="night white">&#9816;</a></td>
+  <td class="dark" id="C1"><a href="#" class="bishop white">&#9815;</a></td>
+  <td class="light" id="D1"><a href="#" class="king white">&#9813;</a></td>
+  <td class="dark" id="E1"><a href="#" class="wife white">&#9812;</a></td>
+  <td class="light" id="F1"><a href="#" class="bishop white">&#9815;</a></td>
+  <td class="dark" id="G1"><a href="#" class="night white">&#9816;</a></td>
+  <td class="light" id="H1"><a href="#" class="rook white">&#9814;</a></td>
+
+
+</tr>
+
+<tr class="letters" >
+
+
+  <td      >a</td>
+  <td      >b</td>
+  <td      >c</td>
+  <td      >d</td>
+  <td      >e</td>
+  <td      >f</td>
+  <td      >g</td>
+  <td      >h</td>
+
+
+</tr>
+
       </tr>
 
-      <tr>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-      </tr>
-
-      <tr>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-
-      </tr>
-
-      <tr>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-      </tr>
-
-      <tr>
-
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
-        <td height="75px" width="75px" bgcolor="black"></td>
-        <td height="75px" width="75px" bgcolor="lightgreen"></td>
+  <tr id="buttons">
+    <button> <i class="fa fa-step-backward"></i> </button>
+    <button> <i class="fa fa-fast-backward" alt="backward"></i> </button>
+    <button> <i class="fa fa-play" alt="play"></i> </button>
+    <button> <i class="fa fa-fast-forward" alt="fast foward"></i> </button>
 
 
-      </tr>
 
-      <tr class="letters" >
-
-        <td height="75px" width="75px"></td>
-        <td height="75px" width="75px">a</td>
-        <td height="75px" width="75px">b</td>
-        <td height="75px" width="75px">c</td>
-        <td height="75px" width="75px">d</td>
-        <td height="75px" width="75px">e</td>
-        <td height="75px" width="75px">f</td>
-        <td height="75px" width="75px">g</td>
-        <td height="75px" width="75px">h</td>
-
-
-      </tr>
-
-
-        <button>rewind</button>
-        <button>step back</button>
-        <button>play/pause</button>
-        <button>fast forward</button>
-      
 
       </table>
 
