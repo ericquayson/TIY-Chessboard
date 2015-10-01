@@ -7,7 +7,9 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "Mocha"
+    "test": "Mocha js/tests.js",
+    "start": "browser-sync start --server --startPath='tests.html' --files='tests.html, css/*.css,js/*.js'",
+    "sass": "node-sass --output css/ scss/main.scss"
   },
   "repository": {
     "type": "git",

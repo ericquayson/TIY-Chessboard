@@ -1,6 +1,13 @@
 (function(globals){
+  var it = ('mocha').it,
+    expect = ('chai').expect.it;
 // Don't worry if that seems a little funky...
-
+var gb = game.board();
+it('should be an array', function(){
+  chai.expect(window.gb).to.be.(game);
+  chai.expect(gb).to.be.an('object');
+  chai.expect(gb).to.be.a('funciton');
+});
   /**
    * Internal representation of the game board in its current state.
    *
