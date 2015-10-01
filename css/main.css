@@ -96,10 +96,35 @@ textarea {
    ========================================================================== */
 
 table {
+  font-family: 'Lobster', cursive;
   box-sizing: border-box;
-  padding-top: 20px;
-  margin: 5px;
-  float: left;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 10px;
+  margin: 15px;
+  align: center;
+  background-color: #FFC125;
+  float: none;
+  border-radius: 2px;
+  width: 100%;
+
+}
+
+caption {
+  font-size: 30pt;
+  color: #104E8B;
+  padding-bottom: 7.25px;
+}
+
+body {
+  font-family: normal;
+  font-style: normal;
+  font-weight: light;
+  letter-spacing: 5px;
+  background-color: lightgrey;
+  align: center;
+  box-sizing: border-box;
+  font-size: 42pt;
 }
 
 tr > td {
@@ -107,12 +132,47 @@ tr > td {
   width: 75px;
 }
 
+tr > td.light {
+  background-color: #EED8AE;
+}
+
+tr > td.dark {
+  background-color: #8B1A1A;
+}
+
+button {
+  height: 75px;
+  width: 35px;
+  background-color: white;
+  padding-right: 2px;
+
+}
+
+tr.numbers {
+  float: left;
+  padding-left: 3px;
+  vertical-align: bottom;
+}
 
 
 
+a {
+  text-decoration: none;
+  padding-left: 40px;
+  padding-bottom: 13px;
+  padding-right: 28px;
+  display: block;
+  height: 60px;
+  position: relative;
+}
 
+ table > tr.letters {
+  background-color: white;
+}
 
-
+thead {
+  vertical-align: baseline;
+}
 
 
 
