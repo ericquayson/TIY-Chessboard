@@ -9,7 +9,7 @@
    */
   document.querySelector("caption")
     .addEventListener('click', 'button', function () {
-      prompt("hello")
+      var caption =
     });
   // AKA
   $("caption").on('click', 'button' function () {
@@ -32,7 +32,10 @@
     var playBttn = $('i.fafa-play');
       console.log(playBttn);
     // TODO: Tell the Model -- `game` -- to advance to the next move...
-    $()
+    var playBttn = $('i.fafa-play').on('click', function () {
+      $('game')
+    })
+
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
@@ -43,6 +46,7 @@
     var backwardBttn = $('i.fa.fa-step-backward');
         console.log(backwardBttn);
     // TODO: Tell the Model -- `game` -- to advance to the previous move...
+    var backwardBttn = $('i.fa.fa-step-backward')
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
