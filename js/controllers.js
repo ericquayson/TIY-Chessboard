@@ -16,14 +16,16 @@
     // Do something with Models and Views...
     // Maybe do something with EVENT...?
   //}
+var $chessboard = jQuery('table');
 
+var gameboard = game.board();
 
   // Controller for "next move"...
   jQuery('.fa-play').on('click', function(event){
     // TODO: Fire tracer bullet!
     console.log('im working controllers');
     // TODO: Tell the Model -- `game` -- to advance to the next move...
-    globals.game.next();
+    game.next();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
@@ -32,7 +34,7 @@
     // TODO: Fire tracer bullet!
     console.log('im working');
     // TODO: Tell the Model -- `game` -- to advance to the previous move...
-
+    game.prev();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
@@ -41,7 +43,7 @@
     // TODO: Fire tracer bullet!
     console.log('hello from controller');
     // TODO: Tell the Model -- `game` -- to advance to the last move...
-
+      game.end();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
@@ -50,7 +52,7 @@
     // TODO: Fire tracer bullet!
     console.log('im working again');
     // TODO: Tell the Model -- `game` -- to do something it knows how to do...
-
+    game.next();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 

@@ -53,6 +53,7 @@
     reset: function(){
       board = initial();
 
+      //console.log(game.tracer());
       return this;
     },
     /**
@@ -68,6 +69,7 @@
         game.applyMove(current);
         current +=1;
       }
+      console.log(game.tracer());
       return this;
 
     },
@@ -84,6 +86,7 @@
         game.applyMove(current);
         current -=1;
       }
+      //console.log(game.tracer());
       return this;
     },
     /**
@@ -94,6 +97,8 @@
      */
     end: function(){
       // Write some code here...
+      //game.board
+      //console.log(game.tracer());
       return this;
     },
     /**

@@ -1,6 +1,7 @@
 (function(globals){
-  var it = ('mocha').it,
-    expect = ('chai').expect.it;
+  var test = ('mocha').it,
+    expect = ('chai').expect;
+
 // Don't worry if that seems a little funky...
 var gb = game.board();
 it('should be an array', function(){
@@ -27,10 +28,19 @@ it('should be an array', function(){
    */
   var moves = [
     // TODO: Fill me in!
+    {from:{rank:6, file:3}, to:{rank:4, file:3}},
+    {from:{rank:0, file:6}, to:{rank:2, file:5}},
+    {from:{rank:6, file:2}, to:{rank:4, file:2}},
+    {from:{rank:1, file:4}, to:{rank:2, file:4}},
+    {from:{rank:6, file:6}, to:{rank:5, file:6}},
+    {from:{rank:1, file:3}, to:{rank:3, file:3}},
+    {from:{rank:7, file:5}, to:{rank:6, file:6}},
+    {from:{rank:0, file:5}, to:{rank:1, file:4}},
+    {from:{rank:7, file:6}, to:{rank:5, file:5}}
   ]; // END moves
 
   // var current; TODO: do we need this?
-
+  var current = 0;
   // You don't need to understand `globals` yet...
   var game = globals.game = {
     /**
