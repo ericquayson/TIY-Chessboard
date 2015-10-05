@@ -7,67 +7,52 @@
    * 3. What `CALLBACK` should be run when the interaction happens?
    * 4. What should my `CALLBACK` do with it's `EVENT`...?
    */
-  document.querySelector("caption")
-    .addEventListener('click', 'button', function () {
-      var caption =
-    });
+  //document.querySelector(SELECTOR)
+    //.addEventListener(TYPE, CALLBACK);
   // AKA
-  $("caption").on('click', 'button' function () {
-
-
-
-  });
+  //jQuery(SELECTOR).on(TYPE, CALLBACK);
   // Where CALLBACK is...
-  function CALLBACK (EVENT){
+  //function CALLBACK (EVENT){
     // Do something with Models and Views...
     // Maybe do something with EVENT...?
-    event.;
-  }
+  //}
+var $chessboard = jQuery('table');
 
+var gameboard = game.board();
 
   // Controller for "next move"...
-  // /* your "next move" button */
-  $('i.fafa-play').on('click', function(e) {
+  jQuery('.fa-play').on('click', function(event){
     // TODO: Fire tracer bullet!
-    var playBttn = $('i.fafa-play');
-      console.log(playBttn);
+    console.log('im working controllers');
     // TODO: Tell the Model -- `game` -- to advance to the next move...
-    var playBttn = $('i.fafa-play').on('click', function () {
-      $('game')
-    })
-
+    game.next();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
   // Controller for "previous move"...
-  // /* your "previous move" button */
-  $('i.fa.fa-step-backward').on('click', 'button', function(e){
+  jQuery('.fa-step-backward').on('click', function(event){
     // TODO: Fire tracer bullet!
-    var backwardBttn = $('i.fa.fa-step-backward');
-        console.log(backwardBttn);
+    console.log('im working');
     // TODO: Tell the Model -- `game` -- to advance to the previous move...
-    var backwardBttn = $('i.fa.fa-step-backward')
+    game.prev();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
   // Controller for "fast-forward"...
-  // /* your "fast-forward" button */
-  $("i.fa-fast-forward").on('click', 'button', function(e){
+  jQuery('.fa-fast-forward').on('click', function(event){
     // TODO: Fire tracer bullet!
-    var fastforwardBttn = $('i.fa-fast-forward');
-        console.log(fastforwardBttn);
+    console.log('hello from controller');
     // TODO: Tell the Model -- `game` -- to advance to the last move...
-
+      game.end();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 
   // Controller for anything else...
-  // /* any other buttons out there? */
-  $("i.fafa-fast-backward").on('click', 'button' function(e){
+  jQuery('.fa-fast-backward').on('click', function(event){
     // TODO: Fire tracer bullet!
-    var fastbackwardBttn = $('i.fafa-fast-backward');
-        console.log(fastbackwardBttn);
+    console.log('im working again');
     // TODO: Tell the Model -- `game` -- to do something it knows how to do...
+    game.next();
     // TODO: Tell the View -- `.chessboard` -- to update the position of the pieces based on `game.board()`
   });
 

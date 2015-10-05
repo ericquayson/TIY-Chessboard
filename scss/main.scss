@@ -94,20 +94,93 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   body {
+     font-family: normal;
+     font-style: normal;
+     font-weight: light;
+     letter-spacing: 5px;
+     margin-left: 10px;
+     margin-right: 200px;
+     align: center;
+     box-sizing: border-box;
+     font-size: 17pt;
+   }
+table {
+     font-family: 'Lobster', normal;
+     box-sizing: border-box;
+     display: table;
+     padding-top: 4px;
+     padding-left: 20px;
+     padding-right: 10px;
+     margin-right: 100px;
+     align: center;
+     background-color: #FFC125;
+     float: none;
+     border-radius: 2px;
+     width: 100%;
+     caption {
+       display: table-caption;
+       font-size: 20pt;
+       color: #104E8B;
+       padding-bottom: 7.25px;
+     }
+}
+
+
+tr {
+  td {
+      display: table-cell;
+      height: 45px;
+      width: 25px;
+     }
+  td.light {
+       background-color: #EED8AE;
+     }
+  td.dark {
+         background-color: #8B1A1A;
+    }
+} /* The end of TR */
+
+
+
+  /* tr > td.light {
+     background-color: #EED8AE;
+   } */
+
+  /* tr > td.dark {
+     background-color: #8B1A1A;
+   } */
+
+   button {
+     height: 55px;
+     width: 25px;
+     background-color: white;
+     padding-right: 2px;
+
+   }
+
+  /* tr.numbers {
+     float: left;
+     padding-left: 3px;
+     vertical-align: bottom;
+   }
+  */
+  a {
+     text-decoration: none;
+     padding-left: 40px;
+     padding-right: 28px;
+     display: block;
+     height: 40px;
+     position: relative;
+   }
 
 table {
-  box-sizing: border-box;
-  padding-top: 20px;
-  margin: 5px;
-  float: left;
-}
-
-tr > button {
-  display: inline-block;
-  box-sizing: border-box;
-  float: left;
-}
-
+  tr.letters {
+       text-align: center;
+       font-size: 12pt;
+       font-weight: normal;
+     }
+  }
 
 
 

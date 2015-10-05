@@ -20,11 +20,19 @@
    */
   var moves = [
     // TODO: Fill me in!
-
+    {from:{rank:6, file:3}, to:{rank:4, file:3}},
+    {from:{rank:0, file:6}, to:{rank:2, file:5}},
+    {from:{rank:6, file:2}, to:{rank:4, file:2}},
+    {from:{rank:1, file:4}, to:{rank:2, file:4}},
+    {from:{rank:6, file:6}, to:{rank:5, file:6}},
+    {from:{rank:1, file:3}, to:{rank:3, file:3}},
+    {from:{rank:7, file:5}, to:{rank:6, file:6}},
+    {from:{rank:0, file:5}, to:{rank:1, file:4}},
+    {from:{rank:7, file:6}, to:{rank:5, file:5}}
   ]; // END moves
 
   // var current; TODO: do we need this?
-
+  var current = 0;
   // You don't need to understand `globals` yet...
   var game = globals.game = {
     /**
@@ -45,6 +53,7 @@
     reset: function(){
       board = initial();
 
+      //console.log(game.tracer());
       return this;
     },
     /**
@@ -55,7 +64,14 @@
      */
     next: function(){
       // Doesn't this seem to be missing something?
+      console.log('im working!');
+      if (current < moves.length) {
+        game.applyMove(current);
+        current +=1;
+      }
+      console.log(game.tracer());
       return this;
+
     },
     /**
      * Advance the internal game board to the previous move.
@@ -65,6 +81,12 @@
      */
     prev: function(){
       // Another good place for code...
+      console.log('im working');
+      if (current > moves.length) {
+        game.applyMove(current);
+        current -=1;
+      }
+      //console.log(game.tracer());
       return this;
     },
     /**
@@ -75,6 +97,8 @@
      */
     end: function(){
       // Write some code here...
+      //game.board
+      //console.log(game.tracer());
       return this;
     },
     /**
@@ -108,6 +132,8 @@
      */
     function applyMove(from, to){
       // You should write something in here...
+      board[to.rank][to.file] = board[from.rank] board[from.file];
+      board[from.rank][from.file] = null;
     } // END applyMove
   }; // END game
 
