@@ -126,25 +126,20 @@ table {
      }
 }
 
-tr td {
-  .rook-black {
-    content: '\2656';
-  }
-}
 
-   tr {
-     td {
-       display: table-cell;
-       height: 45px;
-       width: 25px;
+tr {
+  td {
+      display: table-cell;
+      height: 45px;
+      width: 25px;
      }
-     td.light {
+  td.light {
        background-color: #EED8AE;
      }
-     td.dark {
+  td.dark {
          background-color: #8B1A1A;
-       }
-     } /* The end of TR */
+    }
+} /* The end of TR */
 
 
 

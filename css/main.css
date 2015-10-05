@@ -119,10 +119,6 @@ table caption {
   padding-bottom: 7.25px;
 }
 
-tr td .rook-black {
-  content: '\2656';
-}
-
 tr td {
   display: table-cell;
   height: 45px;
