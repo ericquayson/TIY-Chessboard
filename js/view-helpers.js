@@ -3,7 +3,7 @@
 // Your code BELOW here...
 
   // Because the game board only corresponds to the `tbody` element...
-  var $chessboard = jQuery('.chessboard tbody');
+  var $chessboard = jQuery('table');
   // I always start variable names with `$` when they reference `jQuery.Collection` values
 
   // This looks strangely familiar... is that COPY-PASTA!?
